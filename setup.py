@@ -33,6 +33,7 @@ setup(
         "console_scripts": [
             "nk = nomenklatura.cli:cli",
             "nomenklatura = nomenklatura.cli:cli",
+            "nkserver = nomenklatura.server.cli:cli",
         ],
     },
     extras_require={
@@ -46,6 +47,9 @@ setup(
             "coverage>=4.1",
             "types-setuptools",
             "types-requests",
-        ]
+        ],
+        "server": [
+            "fastapi",
+        ],
     },
 )
